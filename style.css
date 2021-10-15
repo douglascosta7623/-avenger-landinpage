@@ -110,6 +110,11 @@ ul {
   /* justify-content: center; */
 }
 
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card-1,
 .card-2 {
   width: 230.86px;
@@ -123,11 +128,22 @@ ul {
 }
 
 .card-1 {
-  margin-left: 17.5625rem;
-  /* margin-top: 60%; */
+  position: absolute;
+  top: 580px;
+  left: 650px;
+  z-index: 2;
+}
+
+.card-2 {
+  position: absolute;
+  top: 520px;
+  right: 600px;
 }
 
 .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 30px;
   margin-right: 30px;
 }
@@ -143,24 +159,31 @@ ul {
   /* Gray Colors / 500 */
 
   color: #bcbfc6;
+  margin-left: 10px;
+  text-align: center;
 }
+
 footer {
-  margin-top: 10%;
-  margin-bottom: auto;
+  position: absolute;
+  margin-top: 23%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-content: center;
-  align-self: center;
+  align-items: end;
 }
 
 .escudo {
+  height: 50%;
   width: 712px;
-  margin-bottom: auto;
   position: fixed;
 }
+
 .capitao {
   z-index: 20;
   position: fixed;
+  margin-bottom: ;
+}
+
+.card-icon {
+  width: 44.02px;
+  height: 48px;
 }
